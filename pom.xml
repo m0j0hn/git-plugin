@@ -15,13 +15,13 @@
     </license>
   </licenses>
 
-  <artifactId>git</artifactId>
-  <version>3.0.2-SNAPSHOT</version>
+  <artifactId>github-sns-relay</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>hpi</packaging>
-  <name>Jenkins Git plugin</name>
-  <description>Integrates Jenkins with GIT SCM</description>
-  <url>http://wiki.jenkins-ci.org/display/JENKINS/Git+Plugin</url>
-  <inceptionYear>2007</inceptionYear>
+  <name>Jenkins Github SNS Relay plugin</name>
+  <description>Integrates Jenkins with Github via AWS SNS</description>
+  <url>http://wiki.jenkins-ci.org/display/JENKINS/Github+SNS+Relay+Plugin</url>
+  <inceptionYear>2016</inceptionYear>
 
   <properties>
     <jacoco-maven-plugin.version>0.7.7.201606060606</jacoco-maven-plugin.version>
@@ -266,9 +266,9 @@
   </dependencies>
 
   <scm>
-    <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
-    <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>
-    <url>http://github.com/jenkinsci/${project.artifactId}-plugin</url>
+    <connection>scm:git:git://github.com/m0j0hn/${project.artifactId}-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:m0j0hn/${project.artifactId}-plugin.git</developerConnection>
+    <url>http://github.com/m0j0hn/${project.artifactId}-plugin</url>
     <tag>HEAD</tag>
   </scm>
 
