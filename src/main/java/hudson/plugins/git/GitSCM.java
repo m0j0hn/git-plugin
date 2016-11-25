@@ -76,7 +76,7 @@ import static com.google.common.collect.Lists.newArrayList;
 import static hudson.Util.*;
 import static hudson.init.InitMilestone.JOB_LOADED;
 import static hudson.init.InitMilestone.PLUGINS_STARTED;
-import hudson.plugins.git.browser.GithubWeb;
+//import hudson.plugins.git.browser.GithubWeb;
 import static hudson.scm.PollingResult.*;
 import hudson.util.IOUtils;
 import hudson.util.LogTaskListener;
@@ -344,7 +344,8 @@ public class GitSCM extends GitSCMBackwardCompatibility {
             }
         }
         if (webUrls.size() == 1) {
-            return new GithubWeb(webUrls.iterator().next());
+            //return new GithubWeb(webUrls.iterator().next());
+            return null;
         } else {
             return null;
         }
