@@ -41,6 +41,32 @@
     <pluginManagement>
       <plugins>
         <plugin>
+          <groupId>org.eclipse.m2e</groupId>
+          <artifactId>lifecycle-mapping</artifactId>
+          <version>1.0.0</version>
+          <configuration>
+           <lifecycleMappingMetadata>
+             <pluginExecutions>
+               <pluginExecution>
+                 <pluginExecutionFilter>
+                   <groupId>com.infradna.tool</groupId>
+                   <artifactId>bridge-method-injector</artifactId>
+                   <versionRange>[1.0.0,)</versionRange>
+                   <goals>
+                     <goal>process</goal>
+                   </goals>
+                 </pluginExecutionFilter>
+                 <action>
+                   <execute>
+                     <runOnIncremental>false</runOnIncremental>
+                   </execute >
+                 </action>
+               </pluginExecution>
+             </pluginExecutions>
+           </lifecycleMappingMetadata>
+         </configuration>
+        </plugin>
+        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-enforcer-plugin</artifactId>
           <version>1.4.1</version>
