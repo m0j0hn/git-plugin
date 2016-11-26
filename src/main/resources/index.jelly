@@ -1,4 +1,4 @@
 <?jelly escape-by-default='true'?>
 <div>
-  This plugin integrates <a href="http://git.or.cz/">Git</a> with Jenkins.  
+  This plugin integrates <a href="http://github.com/">Github</a> with Jenkins via AWS <a href="https://aws.amazon.com/sns/">SNS</a>. Github notifications sent to SNS are forwarded to this plugin, which then calls the Git and Github webhook endpoints on localhost.
 </div>

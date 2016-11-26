@@ -51,7 +51,7 @@ public class GitStatus extends AbstractModelObject implements UnprotectedRootAct
     }
 
     public String getUrlName() {
-        return "git";
+        return "sns";
     }
 
     /* Package protected - not part of API, needed for testing */
@@ -118,6 +118,10 @@ public class GitStatus extends AbstractModelObject implements UnprotectedRootAct
         lastStaticBuildParameters = null;
         URIish uri;
         List<ParameterValue> buildParameters = new ArrayList<>();
+
+        if (LOGGER.isLoggable(Level.FINE)) {
+            LOGGER.fine("Received notification for url = " + url + " ; branches = " + branches + " ; sha1: " + sha1 );
+        }
 
         try {
             uri = new URIish(url);

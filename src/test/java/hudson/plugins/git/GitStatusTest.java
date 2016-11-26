@@ -63,7 +63,7 @@ public class GitStatusTest extends AbstractGitProject {
     @WithoutJenkins
     @Test
     public void testGetSearchUrl() {
-        assertEquals("git", this.gitStatus.getSearchUrl());
+        assertEquals("sns", this.gitStatus.getSearchUrl());
     }
 
     @WithoutJenkins
@@ -75,7 +75,7 @@ public class GitStatusTest extends AbstractGitProject {
     @WithoutJenkins
     @Test
     public void testGetUrlName() {
-        assertEquals("git", this.gitStatus.getUrlName());
+        assertEquals("sns", this.gitStatus.getUrlName());
     }
 
     @WithoutJenkins
